@@ -33,7 +33,7 @@ section {
     overflow: hidden;
     text-align: center;
     position: relative;
-    box-shadow: 0 25px 58px 0 rgb(0 0 0 / 47%);
+    box-shadow: 0 12px 20px 0 rgb(0 0 0 / 47%);
  
 }
 .card-header{
@@ -42,8 +42,8 @@ section {
     height: 150px;
 }
 .img-holder{
-    width: 116px;
-    height: 116px;
+    width: 96px;
+    height: 96px;
     border-radius: 50%;
     border: 5px solid #ffffff;
     overflow: hidden;
@@ -65,8 +65,8 @@ section {
 }
 
 .name-age{
-    font-size: 1.1rem;
-    margin-bottom: 10px ;
+    font-size: 1rem;
+    margin-bottom: 8px ;
 }
 
 .city{
@@ -94,7 +94,7 @@ section {
     align-items: center;
 }
 .card-footer .item .value{
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin-bottom: 6px;
 }
 .card-footer .item .meta{
