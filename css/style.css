@@ -1,0 +1,156 @@
+
+:root{
+    font-size: 18px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    color: hsl(229, 23%, 23%);
+ 
+}
+
+section {
+    background-color:hsl(185, 75%, 39%) ;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.card{
+    width: 350px;
+    border-radius: 20px;
+    background-color: #fff;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 25px 58px 0 rgb(0 0 0 / 47%);
+ 
+}
+.card-header{
+    background-image:url(/images/bg-pattern-card.svg);
+    background-size: cover;
+    height: 150px;
+}
+.img-holder{
+    width: 116px;
+    height: 116px;
+    border-radius: 50%;
+    border: 5px solid #ffffff;
+    overflow: hidden;
+    margin: -55px auto 30px auto;
+   
+}
+.img-holder img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.card-body{
+    padding: 0 20px 25px ;
+}
+.age,.city,.meta{
+    font-weight: 400;
+    color: hsl(0, 0%, 59%);
+    
+}
+
+.name-age{
+    font-size: 1.1rem;
+    margin-bottom: 10px ;
+}
+
+.city{
+    font-size: 0.85rem;
+}
+.age{
+    font-weight: 400;
+    margin: 5px;
+}
+.card-footer{
+    border-top: 1px solid hsl(0, 0%, 80%);
+    display: flex;
+   padding: 0 25px;
+    
+}
+.card-footer .item{
+    flex: 1;
+   /* height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px; */
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card-footer .item .value{
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+}
+.card-footer .item .meta{
+    font-size: 0.6rem;
+    letter-spacing: 2px;
+}
+
+/*Circles*/
+
+.circles .c1,
+.circles .c2{
+    position: absolute;
+    animation: 2s circles forwards;
+    opacity: 0;
+}
+.circles .c1{
+    top: -581px;
+    left: -218px;
+    transform: translate(-100px, -50px);
+}
+.circles .c2{
+    bottom: -609px;
+    right: -254px;
+    transform: translate(100px, 50px);
+}
+
+@keyframes circles{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+
+.attribution { 
+    font-size: 11px; 
+    position: absolute;
+    text-align: center;
+    bottom:0 ;
+    margin-bottom: 10px;
+ }
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+ }
+
+ @media only screen and (max-width: 376px) {
+     .circles .c1{
+        top: -598px;
+        left: -741px;
+     }
+    .circles .c2{
+        bottom: -620px;
+        right: -729px;
+    }
+
+ }
